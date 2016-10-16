@@ -28,12 +28,12 @@ public class Problema16 {
         d = teclado.nextInt();
         return d;
     }
-    public static void  mostrarMayor(int a, int b, int c){
-        if ((a > b)&& (a > c)){
+    public static void  mostrarMayor(int a, int b, int c){ //Mostrar el método (Resultado)
+        if ((a > b)&& (a > c)){ // SI a es mayor que b y c
             aMayor(a);}
-        else if ((b > a)&&(b > c)){
+        else if ((b > a)&&(b > c)){ // Si b es mayor que a y c
         bMayor(b);}
-        else if  ((c > b)&& (c > b)){
+        else if  ((c > b)&& (c > a)){ // Si c es mayor que a y b 
         cMayor(c);}
         else { System.out.println("Uno mas números son iguales");
     }
