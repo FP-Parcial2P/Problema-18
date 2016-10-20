@@ -27,7 +27,7 @@ public class Problema18 {
     System.out.print("Numero: "); 
     Scanner teclado = new Scanner(System.in);
     d = teclado.nextInt();
-    while (d<0){ 
+    while (d<0){                  // Este while servirá para que el numero sea positivo...
         System.out.println("El numero tiene que ser positivo, vuelve a introducirlo"); 
         d = teclado.nextInt();
     }
@@ -40,15 +40,15 @@ public class Problema18 {
     }
     public static void calcularYMostrarMCM(int a, int b, int c,int max){ // Calcular mínimo común múltiplo
      int mcm = 1;
-     for (int i = 2; i<=max; i++){   
+     for (int i = 2; i<=max; i++){           // desde 2 hasta el numero maximo 
          while (a%i==0 || b%i==0 || c%i==0){ //Si el residuo a b o c entre i es igual a 0
-             mcm = mcm*i;
-             if(a%i==0) 
-             a=a/i; 
-             if(b%i==0)
-             b=b/i; 
-             if(c%i==0) 
-             c=c/i; 
+             mcm = mcm*i;                     //Multiplicar mcm por i.
+             if(a%i==0) {
+             a=a/i; }
+             if(b%i==0){
+             b=b/i; }
+             if(c%i==0) {
+             c=c/i; }
          }
      }
      System.out.print("El minimo comun múltiplo de a b y c es igual a: " + mcm); //Mostrar mcm
