@@ -1,0 +1,8 @@
+run:
+A continuación ingresa tres numeros 
+Numero: 4
+A continuación ingresa tres numeros 
+Numero: 5
+A continuación ingresa tres numeros 
+Numero: 6
+El minimo comun múltiplo de a b y c es igual a: 60BUILD SUCCESSFUL (total time: 5 seconds)
